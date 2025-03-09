@@ -11,5 +11,6 @@ google-cloud-vision
 effdet
 # Do not move to constraints.in, otherwise unstructured-inference will not be upgraded
 # when unstructured library is.
-unstructured-inference>=0.8.7
+# Install unstructured-inference from your GitHub branch so that it uses numpy 2
+git+https://github.com/bmjjr/unstructured-inference.git@main#egg=unstructured-inference
 unstructured.pytesseract>=0.3.12
